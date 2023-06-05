@@ -1,19 +1,14 @@
-$clr-white: #f8f7f7;
-$clr-black: #201e1f;
-$clr-red: #da3f0b;
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
-  color: $clr-black;
-  background-color: $clr-white;
+  color: #201e1f;
+  background-color: #f8f7f7;
   font-size: 1.75rem;
   font-family: system-ui, sans-serif;
   line-height: 1.6;
-
   /* this is being used to center the content on the screen */
   display: grid;
   height: 100vh;
@@ -25,34 +20,35 @@ body {
   gap: 0.75em;
   width: min(90%, 60rem);
   padding: 2em;
-  &__title {
-    color: $clr-red;
-  }
+}
+.card__title {
+  color: #da3f0b;
 }
 
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
   text-decoration: none;
-  border: $clr-red solid 2px;
+  border: #da3f0b solid 2px;
   border-radius: 0.5rem;
-  &:hover,
-  &:focus {
-    color: $clr-white;
-    background: $clr-black;
-    box-shadow: 0 0 1rem $clr-red;
-  }
-  &--primary {
-    color: $clr-white;
-    background: $clr-red;
-  }
-  &--outline {
-    color: $clr-red;
-    background: $clr-white;
-  }
+}
+.btn:hover, .btn:focus {
+  color: #f8f7f7;
+  background: #201e1f;
+  box-shadow: 0 0 1rem #da3f0b;
+}
+.btn--primary {
+  color: #f8f7f7;
+  background: #da3f0b;
+}
+.btn--outline {
+  color: #da3f0b;
+  background: #f8f7f7;
 }
 
 .flex-group {
   display: flex;
   gap: 1rem;
 }
+
+/*# sourceMappingURL=variable-challenge.css.map */
